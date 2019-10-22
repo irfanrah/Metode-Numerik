@@ -1,0 +1,17 @@
+from numpy import linalg 
+import numpy as np
+a= np.array ([[0,0,2,1,2] ,[0,1,0,2,-1], [1,2,0,-2,1], [0,0,0,-1,1], [0,1,-1,1,-1]])
+b= np.array ([[1], [1], [-4], [-2], [-1]])
+c= np.array ([[0,0,2,1,2,1] ,[0,1,0,2,-1,1], [1,2,0,-2,1,-4], [0,0,0,-1,1,-2], [0,1,-1,1,-1,-1]])
+print ("Matrix a " , a)
+print ("Matrix b ", b)
+print ("Matrixnya adalah:" , c)
+matsolve = linalg.solve (a,c)
+x1 = int(matsolve[0])
+x2 = int(matsolve[1])
+x3 = int(matsolve[2])
+x4 = int(matsolve[3])
+x5 = int(matsolve[4])
+hasil= (x1, x2, x3, x4, x5)
+print ("Hasil nilai x1,x2,x3,x4,x5 :")
+print (hasil)
